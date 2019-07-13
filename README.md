@@ -4,23 +4,38 @@ Playing with publish/subscribe paradigm
 
 ## Dependencies
 
-- nodejs
 - npm
+- nodejs
 - command line (bash)
 - [mqtt.js](https://github.com/mqttjs/MQTT.js)
-- [mqtt-server](https://github.com/mqttjs/mqtt-server)
+- [aedes](https://github.com/mcollina/aedes)
 
 ## How to run this
 
-Enter both folders (client and server) and
+Enter server folder, open terminal and:
 
 ```bash
 npm install
-node index.js
+npm run dev
 ```
+
+On client folder, open two terminals and:
+
+```bash
+npm install
+npm run pub
+```
+
+```bash
+npm install
+npm run sub
+```
+
+You can open as much clients, either pub or sub as you wish. as long as the
+broker remains running the subscribers will get the message.
 
 ## Other noteworthy libraries
 
 [mqtt-connection](https://github.com/mqttjs/mqtt-connection)
-
-I might drop the mqtt-server over this one.
+[mqtt-server](https://github.com/mqttjs/mqtt-server)
+[mosca](https://github.com/mcollina/mosca)

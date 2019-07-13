@@ -4,7 +4,7 @@
   "description": "sample-mqtt-server",
   "main": "index.js",
   "dependencies": {
-    "mqtt-server": "^0.1.0"
+    "aedes": "^0.39.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
