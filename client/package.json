@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "pub": "nodemon publish.js",
+    "sub": "nodemon subscribe.js"
   },
   "keywords": [],
   "author": "",
